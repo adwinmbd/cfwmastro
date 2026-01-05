@@ -1,0 +1,21 @@
+{
+	"name": "cfmastro",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "pnpm run generate && wrangler dev",
+		"build": "pnpm run generate && wrangler build",
+		"generate": "node node_modules/@mastrojs/mastro/src/generator.js --only-pregenerate",
+		"deploy": "wrangler deploy",
+		"check": "tsc",
+		"cf-typegen": "wrangler types"
+	},
+	"dependencies": {
+		"@mastrojs/mastro": "jsr:^0"
+	},
+	"devDependencies": {
+		"typescript": "^5.5.2",
+		"wrangler": "^4.56.0"
+	}
+}
