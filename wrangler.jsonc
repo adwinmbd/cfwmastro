@@ -1,12 +1,10 @@
 {
-	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "my-website",
-	"main": "server.ts",
-	"compatibility_date": "2025-12-19",
-	"compatibility_flags": [
-    "nodejs_compat"
-  ],
-	"assets": {
-    "directory": "./generated"
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "my-website",
+  "main": "server.ts",
+  "compatibility_date": "2025-12-19",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./dist"
   }
 }
